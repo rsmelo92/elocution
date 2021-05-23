@@ -1,0 +1,55 @@
+.cortana {
+  position: relative;
+}
+
+.inner, .outer {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.inner {
+  background-color: var(--primary-color);
+  opacity: 0.6;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  animation: inner 1.5s infinite ease-in-out alternate;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+  height: 40px;
+  width: 40px;
+  transform-origin: center;
+  animation: outer 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes inner {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
