@@ -16,6 +16,7 @@
   height: 20px;
   width: 20px;
   animation: inner 1.5s infinite ease-in-out alternate;
+  cursor: pointer;
 }
 
 .outer {
