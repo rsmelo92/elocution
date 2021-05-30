@@ -30,4 +30,6 @@ describe('GameScreen', () => {
     const word = screen.getByText(/Word is curiously/gi);
     expect(word).toBeDefined();
   });
+
+  test.todo('behaves correctly');
 });
