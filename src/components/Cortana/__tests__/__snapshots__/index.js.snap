@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cortana renders correctly 1`] = `
+<div
+  class="cortana"
+>
+  <div
+    class="outer"
+  >
+    <div
+      class="inner"
+    />
+  </div>
+</div>
+`;
