@@ -6,7 +6,9 @@ import Chip from '../Chip';
 
 import styles from './styles.module.css';
 
-const formatWord = (word: string) => word.replace(/[^\w\s]/gi, '').replace(' ', '').toLocaleLowerCase();
+const formatWord = (word: string) => 
+  word.replace(/[^\w\s]/gi, '').replace(' ', '').toLocaleLowerCase();
+
 const setBodyBG = (points:number) => 
   document.body.style.backgroundColor = `rgb(${51+points} ${55+points} ${56+points})`;
 
@@ -77,13 +79,13 @@ export default function GameScreen() {
       <h2>{points}</h2>
       <small>{attempts} attempts</small>
       <p>Word is {word}</p>
-      <div className={styles.chip}>
-        {answer && (
+      {answer && (
+        <div className={styles.chip}>
           <Chip color={chipColor}>
             {answer}
           </Chip>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
