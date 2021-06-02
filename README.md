@@ -1,4 +1,5 @@
 # Pronounciation game
+![main](https://github.com/rsmelo92/elocution/actions/workflows/main.yml/badge.svg)
 
 Check your pronounciation skills
 
